@@ -40,7 +40,7 @@ const source = ref(0)
 const outputValue = useTransition(source, {
   duration: 1500,
 })
-source.value = 172000
+source.value = 172000.00
 </script>
 
 <style scoped>
