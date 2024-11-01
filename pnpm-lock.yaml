@@ -100,10 +100,10 @@ importers:
         version: 2.2.1
       '@pnpm/find-workspace-packages':
         specifier: ^4.0.16
-        version: 4.0.16(@pnpm/logger@4.0.0)
+        version: 4.0.16(@pnpm/logger@5.2.0)
       '@pnpm/logger':
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^5.2.0
+        version: 5.2.0
       '@pnpm/types':
         specifier: ^8.4.0
         version: 8.4.0
@@ -124,7 +124,7 @@ importers:
         version: 1.43.1
       '@vitejs/plugin-vue':
         specifier: ^2.3.3
-        version: 2.3.3(vite@5.3.3(@types/node@22.8.6)(sass@1.79.3)(terser@5.36.0))(vue@3.2.37)
+        version: 2.3.3(vite@2.9.15(sass@1.79.3))(vue@3.2.37)
       '@vitejs/plugin-vue-jsx':
         specifier: ^1.3.10
         version: 1.3.10
@@ -335,10 +335,10 @@ importers:
         version: link:../build-constants
       '@pnpm/find-workspace-packages':
         specifier: ^4.0.16
-        version: 4.0.16(@pnpm/logger@4.0.0)
+        version: 4.0.16(@pnpm/logger@5.2.0)
       '@pnpm/logger':
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^5.2.0
+        version: 5.2.0
       '@rollup/plugin-commonjs':
         specifier: ^22.0.1
         version: 22.0.1(rollup@2.75.7)
@@ -411,10 +411,10 @@ importers:
     dependencies:
       '@pnpm/find-workspace-packages':
         specifier: ^4.0.16
-        version: 4.0.16(@pnpm/logger@4.0.0)
+        version: 4.0.16(@pnpm/logger@5.2.0)
       '@pnpm/logger':
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^5.2.0
+        version: 5.2.0
       consola:
         specifier: ^2.15.3
         version: 2.15.3
@@ -1639,9 +1639,11 @@ packages:
 
   '@esbuild-kit/cjs-loader@2.2.1':
     resolution: {integrity: sha512-pq2Z4DcqTBF7y1wQuIzFVqmHJVnmP6hgHEWN2ubPjeG7OzXMZ9NvozW+YA/MIeMdZWp1jcJ/EvXk2+mfEKoCDQ==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild-kit/core-utils@2.0.2':
     resolution: {integrity: sha512-clNYQUsqtc36pzW5EufMsahcbLG45EaW3YDyf0DlaS0eCMkDXpxIlHwPC0rndUwG6Ytk9sMSD5k1qHbwYEC/OQ==}
+    deprecated: 'Merged into tsx: https://tsx.is'
 
   '@esbuild/aix-ppc64@0.19.12':
     resolution: {integrity: sha512-bmoCYyWdEL3wDQIVbcyzRyeKLgk2WtWLTWz1ZIAZF/EGbNOwSA6ew3PftJ1PqMiOOGu0OyFMzG53L0zqIpPeNA==}
@@ -2287,9 +2289,9 @@ packages:
     resolution: {integrity: sha512-8/t9YrC8VSJgEJv/m1UQMNPHs3Tu4Ow7shpuIDPD5sqjNw3lICB9ybbPlO+6/bkb9/D8QizbBigbVsDybWR9Hw==}
     engines: {node: '>=14.6'}
 
-  '@pnpm/logger@4.0.0':
-    resolution: {integrity: sha512-SIShw+k556e7S7tLZFVSIHjCdiVog1qWzcKW2RbLEHPItdisAFVNIe34kYd9fMSswTlSRLS/qRjw3ZblzWmJ9Q==}
-    engines: {node: '>=12.17'}
+  '@pnpm/logger@5.2.0':
+    resolution: {integrity: sha512-dCdSs2wPCweMkRLdISAKBOKSWeq/9iS9aanWgjoUkFs06KN2o5XGFg53oCXg/KbZhF9AXS3vMHPwTebzCeAEsA==}
+    engines: {node: '>=18.12'}
 
   '@pnpm/manifest-utils@3.0.6':
     resolution: {integrity: sha512-7lmez3meuQeQjXXpZygC99D14QvoYdRVhuxac52Glor2/aWx2DTYSZ6AkzH5j7fuWiYVvNc9WmELYLptMkYhAw==}
@@ -3608,8 +3610,8 @@ packages:
   bl@4.1.0:
     resolution: {integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==}
 
-  bole@4.0.0:
-    resolution: {integrity: sha512-Bk/2qoyOSlwU1dnDFk/oPM2FCNKAlYlBHfpAgwGX+K9HUtxSvmIAQCmMWMOvE6BlHHRCwsH1MxJe/r1ieodxqQ==}
+  bole@5.0.17:
+    resolution: {integrity: sha512-q6F82qEcUQTP178ZEY4WI1zdVzxy+fOnSF1dOMyC16u1fc0c24YrDPbgxA6N5wGHayCUdSBWsF8Oy7r2AKtQdA==}
 
   boolbase@1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
@@ -8791,6 +8793,7 @@ packages:
 
   workbox-google-analytics@6.6.0:
     resolution: {integrity: sha512-p4DJa6OldXWd6M9zRl0H6vB9lkrmqYFkRQ2xEiNdBFp9U0LhsGO7hsBscVEyH9H2/3eZZt8c97NB2FD9U2NJ+Q==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
 
   workbox-navigation-preload@6.6.0:
     resolution: {integrity: sha512-utNEWG+uOfXdaZmvhshrh7KzhDu/1iMHyQOV6Aqup8Mm78D286ugu5k9MFD9SzBT5TcwgwSORVvInaXWbvKz9Q==}
@@ -10952,28 +10955,28 @@ snapshots:
       '@pnpm/types': 8.4.0
       load-json-file: 6.2.0
 
-  '@pnpm/cli-utils@0.7.16(@pnpm/logger@4.0.0)':
+  '@pnpm/cli-utils@0.7.16(@pnpm/logger@5.2.0)':
     dependencies:
       '@pnpm/cli-meta': 3.0.5
-      '@pnpm/config': 15.5.0(@pnpm/logger@4.0.0)
-      '@pnpm/default-reporter': 9.1.6(@pnpm/logger@4.0.0)
+      '@pnpm/config': 15.5.0(@pnpm/logger@5.2.0)
+      '@pnpm/default-reporter': 9.1.6(@pnpm/logger@5.2.0)
       '@pnpm/error': 3.0.1
-      '@pnpm/logger': 4.0.0
-      '@pnpm/manifest-utils': 3.0.6(@pnpm/logger@4.0.0)
-      '@pnpm/package-is-installable': 6.0.7(@pnpm/logger@4.0.0)
+      '@pnpm/logger': 5.2.0
+      '@pnpm/manifest-utils': 3.0.6(@pnpm/logger@5.2.0)
+      '@pnpm/package-is-installable': 6.0.7(@pnpm/logger@5.2.0)
       '@pnpm/read-project-manifest': 3.0.6
       '@pnpm/types': 8.4.0
       chalk: 4.1.2
       load-json-file: 6.2.0
 
-  '@pnpm/config@15.5.0(@pnpm/logger@4.0.0)':
+  '@pnpm/config@15.5.0(@pnpm/logger@5.2.0)':
     dependencies:
       '@pnpm/constants': 6.1.0
       '@pnpm/error': 3.0.1
       '@pnpm/git-utils': 0.1.0
       '@pnpm/matcher': 3.0.0
       '@pnpm/npm-conf': 1.0.4
-      '@pnpm/pnpmfile': 2.0.6(@pnpm/logger@4.0.0)
+      '@pnpm/pnpmfile': 2.0.6(@pnpm/logger@5.2.0)
       '@pnpm/read-project-manifest': 3.0.6
       '@pnpm/types': 8.4.0
       camelcase: 6.3.0
@@ -10989,17 +10992,17 @@ snapshots:
 
   '@pnpm/constants@6.1.0': {}
 
-  '@pnpm/core-loggers@7.0.5(@pnpm/logger@4.0.0)':
+  '@pnpm/core-loggers@7.0.5(@pnpm/logger@5.2.0)':
     dependencies:
-      '@pnpm/logger': 4.0.0
+      '@pnpm/logger': 5.2.0
       '@pnpm/types': 8.4.0
 
-  '@pnpm/default-reporter@9.1.6(@pnpm/logger@4.0.0)':
+  '@pnpm/default-reporter@9.1.6(@pnpm/logger@5.2.0)':
     dependencies:
-      '@pnpm/config': 15.5.0(@pnpm/logger@4.0.0)
-      '@pnpm/core-loggers': 7.0.5(@pnpm/logger@4.0.0)
+      '@pnpm/config': 15.5.0(@pnpm/logger@5.2.0)
+      '@pnpm/core-loggers': 7.0.5(@pnpm/logger@5.2.0)
       '@pnpm/error': 3.0.1
-      '@pnpm/logger': 4.0.0
+      '@pnpm/logger': 5.2.0
       '@pnpm/render-peer-issues': 2.0.5
       '@pnpm/types': 8.4.0
       ansi-diff: 1.1.1
@@ -11020,9 +11023,9 @@ snapshots:
     dependencies:
       '@pnpm/constants': 6.1.0
 
-  '@pnpm/find-workspace-packages@4.0.16(@pnpm/logger@4.0.0)':
+  '@pnpm/find-workspace-packages@4.0.16(@pnpm/logger@5.2.0)':
     dependencies:
-      '@pnpm/cli-utils': 0.7.16(@pnpm/logger@4.0.0)
+      '@pnpm/cli-utils': 0.7.16(@pnpm/logger@5.2.0)
       '@pnpm/constants': 6.1.0
       '@pnpm/types': 8.4.0
       find-packages: 9.0.6
@@ -11042,14 +11045,14 @@ snapshots:
     dependencies:
       '@pnpm/types': 8.4.0
 
-  '@pnpm/logger@4.0.0':
+  '@pnpm/logger@5.2.0':
     dependencies:
-      bole: 4.0.0
+      bole: 5.0.17
       ndjson: 2.0.0
 
-  '@pnpm/manifest-utils@3.0.6(@pnpm/logger@4.0.0)':
+  '@pnpm/manifest-utils@3.0.6(@pnpm/logger@5.2.0)':
     dependencies:
-      '@pnpm/core-loggers': 7.0.5(@pnpm/logger@4.0.0)
+      '@pnpm/core-loggers': 7.0.5(@pnpm/logger@5.2.0)
       '@pnpm/error': 3.0.1
       '@pnpm/types': 8.4.0
     transitivePeerDependencies:
@@ -11068,23 +11071,23 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.1
       config-chain: 1.1.13
 
-  '@pnpm/package-is-installable@6.0.7(@pnpm/logger@4.0.0)':
+  '@pnpm/package-is-installable@6.0.7(@pnpm/logger@5.2.0)':
     dependencies:
-      '@pnpm/core-loggers': 7.0.5(@pnpm/logger@4.0.0)
+      '@pnpm/core-loggers': 7.0.5(@pnpm/logger@5.2.0)
       '@pnpm/error': 3.0.1
-      '@pnpm/logger': 4.0.0
+      '@pnpm/logger': 5.2.0
       '@pnpm/types': 8.4.0
       detect-libc: 2.0.1
       execa: safe-execa@0.1.4
       mem: 8.1.1
       semver: 7.6.3
 
-  '@pnpm/pnpmfile@2.0.6(@pnpm/logger@4.0.0)':
+  '@pnpm/pnpmfile@2.0.6(@pnpm/logger@5.2.0)':
     dependencies:
-      '@pnpm/core-loggers': 7.0.5(@pnpm/logger@4.0.0)
+      '@pnpm/core-loggers': 7.0.5(@pnpm/logger@5.2.0)
       '@pnpm/error': 3.0.1
       '@pnpm/lockfile-types': 4.2.0
-      '@pnpm/logger': 4.0.0
+      '@pnpm/logger': 5.2.0
       '@pnpm/types': 8.4.0
       chalk: 4.1.2
       path-absolute: 1.0.1
@@ -11440,6 +11443,7 @@ snapshots:
   '@types/node@22.8.6':
     dependencies:
       undici-types: 6.19.8
+    optional: true
 
   '@types/normalize-package-data@2.4.1': {}
 
@@ -12821,7 +12825,7 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 3.6.0
 
-  bole@4.0.0:
+  bole@5.0.17:
     dependencies:
       fast-safe-stringify: 2.1.1
       individual: 3.0.0
@@ -15241,7 +15245,7 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 22.8.6
+      '@types/node': 18.19.25
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
@@ -17824,7 +17828,8 @@ snapshots:
 
   undici-types@5.26.5: {}
 
-  undici-types@6.19.8: {}
+  undici-types@6.19.8:
+    optional: true
 
   undici@5.4.0: {}
 
